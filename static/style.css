@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    transition: background 0.5s ease;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Textarea */
+textarea {
+    width: 60%;
+    height: 120px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    background: #00adb5;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00fff5;
+    transform: scale(1.05);
+}
+
+/* Result Card */
+.card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.1);
+}
+
+/* Loader */
+.hidden {
+    display: none;
+}
+
+/* Sentiment colors */
+.positive { color: #00ff88; }
+.negative { color: #ff4d4d; }
+.neutral { color: #ffd166; }
+
+/* History items */
+#history p {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* Search box */
+#searchInput {
+    padding: 10px;
+    width: 40%;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+
+/* Chart spacing */
+canvas {
+    margin-top: 20px;
+}
+
+/* Dynamic backgrounds */
+.bg-positive {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.bg-negative {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.bg-neutral {
+    background: linear-gradient(135deg, #3a7bd5, #3a6073);
+}

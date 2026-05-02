@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyzer Pro</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body id="body">
+
+<div class="container">
+    <h1>💬 Sentiment Analyzer Pro</h1>
+
+    <!-- Input -->
+    <textarea id="text" maxlength="200" placeholder="Type your thoughts..."></textarea>
+    <p id="charCount">0 / 200</p>
+
+    <!-- Typing -->
+    <p id="typingStatus"></p>
+
+    <!-- Mood Slider -->
+    <h3>Select Mood</h3>
+    <input type="range" min="0" max="2" value="1" id="moodSlider">
+    <p id="moodEmoji">😐</p>
+
+    <!-- Buttons -->
+    <button onclick="analyze()">Analyze</button>
+    <button onclick="clearAll()">Clear</button>
+
+    <!-- Loader -->
+    <div id="loader" class="hidden">⏳ Analyzing...</div>
+
+    <!-- Result -->
+    <div id="result" class="card"></div>
+
+    <!-- Chart -->
+    <canvas id="chart"></canvas>
+
+    <!-- History Section -->
+    <h2>📜 History</h2>
+
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="🔍 Search history..."
+        oninput="filterHistory()"
+    >
+
+    <button onclick="clearHistory()">🗑️ Clear History</button>
+
+    <div id="history"></div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
